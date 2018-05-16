@@ -1,0 +1,3 @@
+module Calculatorv
+  VERSION = "0.1.0"
+end
