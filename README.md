@@ -1,43 +1,19 @@
-# Calculator
+A user - interactive Ruby implemented Calculator.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/calculator`. To experiment with that code, run `bin/console` for an interactive prompt.
+Steps to Follow-
 
-TODO: Delete this and the text above, and describe your gem
+1) Just Download "Calculator.rb" file.
+2) Install ruby if not already installed from https://www.ruby-lang.org/en/downloads/ .
+3) Move to the directory where the file has been downloaded.
+4) Then "cd" inside "lib" directory.
+5) Run the file using Command "ruby calculator.rb" .
+6) For running tests , run command "rspec spec spec/calculator_spec.rb"
 
-## Installation
+Details -
 
-Add this line to your application's Gemfile:
+The Calculator is user-interactive. 
+You can use commands like - "add <number>" , "subtract <number>", " divide <number>" , "multiply <number>" for usual arithmetic operations on the original number. ( <number> is a Integer or Floating-point number ) Also you can use command - "cancel" for resetting the orinigal number's value to 0. For terminating the program use "exit" command.
 
-```ruby
-gem 'calculator'
-```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install calculator
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/calculator. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Calculator project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/calculator/blob/master/CODE_OF_CONDUCT.md).
+Do comment your feedbacks :) .
+Enjoy !!
