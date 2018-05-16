@@ -1,44 +1,24 @@
 require_relative "calculator/version"
-require_relative "calculator/calculator_helper"
-require_relative "calculator/validitychecker"
+require_relative "calculator/parser"
+require_relative "calculator/router"
 
-object1=Calculator.new
-   
+
+parserobject=Parser.new
+routerobject=Router.new
+calculatorobject=Calculator.new
+
 loop do
-    operation=gets.chomp
-    values=operation.split(" ")
-    case values[0]
-       when 'exit'
-         puts "Program Terminated"
-         flag=1
-       when 'cancel'
-         object1.cancel
-       when 'add'
-          if Validity.checkvalidity? values
-             object1.add values[1].to_f
-          else object1.add
-          end
-       when 'subtract'
-           if Validity.checkvalidity? values
-               object1.subtract values[1].to_f
-           else object1.subtract
-           end
-       when 'divide'
-          if Validity.checkvalidity? values
-               object1.divide values[1].to_f
-           else object1.divide
-           end
-       when 'multiply'
-          if Validity.checkvalidity? values
-             object1.multiply values[1].to_f
-          else object1.multiply
-          end
-      else
-       puts "Invalid Command , enter a valid one"
+    command_string=gets.chomp
+    error,command_array=parserobject.parse(command_string)
+    #puts error,command_array
+    if error==''
+      result= routerobject.route(command_array,calculatorobject)
+      puts result
+      if result=='Program Terminated'
+        break
+      end
+    else
+      puts error
     end
-    if flag == 1
-       break
-    end
-
 end
 
