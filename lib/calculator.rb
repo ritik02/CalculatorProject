@@ -1,11 +1,6 @@
 require_relative "calculator/version"
 require_relative "calculator/calculator_helper"
-
-
-def CheckValidity? value
-   return true if value.length==2 && (value[1].to_i.to_s==value[1] || value[1].to_f.to_s== value[1])
-   return false
-end
+require_relative "calculator/validitychecker"
 
 object1=Calculator.new
    
@@ -19,22 +14,22 @@ loop do
        when 'cancel'
          object1.cancel
        when 'add'
-          if CheckValidity? values
+          if Validity.checkvalidity? values
              object1.add values[1].to_f
           else object1.add
           end
        when 'subtract'
-           if CheckValidity? values
+           if Validity.checkvalidity? values
                object1.subtract values[1].to_f
            else object1.subtract
            end
        when 'divide'
-          if CheckValidity? values
+          if Validity.checkvalidity? values
                object1.divide values[1].to_f
            else object1.divide
            end
        when 'multiply'
-          if CheckValidity? values
+          if Validity.checkvalidity? values
              object1.multiply values[1].to_f
           else object1.multiply
           end
