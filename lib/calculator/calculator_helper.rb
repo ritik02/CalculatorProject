@@ -5,15 +5,16 @@ class Calculator
    end
    def add (number2=0.0)
       @number=@number+number2
-      puts @number
+      p @number
+      
    end
    def subtract (number2=0.0)
       @number=@number-number2
-      puts @number
+      p @number
    end
    def multiply (number2=1.0)
       @number=@number*number2
-      puts @number
+      p @number
    end
    def divide (number2=1.0)
       if number2.zero?
@@ -21,11 +22,11 @@ class Calculator
       return
       end
       @number=@number/number2
-      puts @number
+      p @number
 
    end
    def cancel
       @number=0.0
-      puts @number
+      p @number
    end
 end
