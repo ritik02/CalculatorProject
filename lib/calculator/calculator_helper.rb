@@ -1,7 +1,7 @@
 class Calculator
  
   def initialize (number=0.0)
-      @number=number
+      @number=number.to_f
    
   end
    def add (number2)

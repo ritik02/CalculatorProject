@@ -1,4 +1,7 @@
 require "bundler/setup"
+require 'simplecov'
+SimpleCov.start
+
 require_relative "../lib/calculator/calculator_helper"
 
 RSpec.configure do |config|
