@@ -2,7 +2,10 @@ require "bundler/setup"
 require 'simplecov'
 SimpleCov.start
 
+require_relative "../lib/calculator/validitychecker"
 require_relative "../lib/calculator/calculator_helper"
+require_relative "../lib/calculator/router"
+require_relative "../lib/calculator/parser"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

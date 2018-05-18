@@ -1,55 +1,54 @@
-class Calculator
+class CalculatorHelper
  
-  def initialize (number=0.0)
-      @number=number.to_f
+  def initialize (operand = 0.0)
+      @number = operand.to_f
    
   end
-   def add (number2)
-      @number=@number+number2
+   def add (operand)
+      @number = @number + operand
    end
    
-   def subtract (number2)
-      @number=@number-number2
+   def subtract (operand)
+      @number = @number - operand
    end
    
-   def multiply (number2)
-      @number=@number*number2
+   def multiply (operand)
+      @number = @number * operand
    end
    
-   def divide (number2)
-      if number2.zero?
+   def divide (operand)
+      if operand.zero?
       return "Division not performed , enter another number other than zero"
       
       end
-      @number=@number/number2
+      @number = @number / operand
    end
    
    def abs
-      @number=@number.abs
+      @number = @number.abs
    end
    
    def neg
-     @number=-@number
-     @number
+     @number = -@number
    end
    
    def sqr
-     @number=@number*@number
+     @number = @number * @number
    end
    
    def cube
-     @number=@number**3
+     @number = @number **3
    end
    
    def cubert
-     @number=Math.cbrt(@number)
+     @number = Math.cbrt(@number)
    end
    
    def sqrt
-     @number=Math.sqrt(@number)
+     @number = Math.sqrt(@number)
    end
      
    def cancel
-      @number=0.0
+      @number = 0.0
    end
 end

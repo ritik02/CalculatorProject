@@ -4,9 +4,9 @@ class Router
   
   def route command_array,calculatorobject
   case command_array[0]
+
        when 'exit'
          return "Program Terminated"
-         
        when 'cancel'
          calculatorobject.cancel
        when 'add'

@@ -7,3 +7,4 @@ gemspec
 
 gem "spec"
 gem 'simplecov', :require => false, :group => :test
+gem 'rubocop', '~> 0.56.0', require: false
