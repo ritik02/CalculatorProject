@@ -1,21 +1,21 @@
 class CalculatorHelper
-  def initialize (operand = 0.0)
+  def initialize(operand = 0.0)
     @number = operand.to_f
   end
   
-  def add (operand)
-    @number = @number + operand
+  def add(operand)
+    @number += operand
   end
   
-  def subtract (operand)
-    @number = @number - operand
+  def subtract(operand)
+    @number -= operand
   end
   
-  def multiply (operand)
-    @number = @number * operand
+  def multiply(operand)
+    @number *= operand
   end
   
-  def divide (operand)
+  def divide(operand)
     if operand.zero?
       return "Division not performed , enter another number other than zero"
     end
@@ -31,11 +31,11 @@ class CalculatorHelper
   end
   
   def sqr
-    @number = @number * @number
+    @number **= 2
   end
   
   def cube
-    @number = @number**3
+    @number **= 3
   end
   
   def cubert

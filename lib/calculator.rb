@@ -1,6 +1,6 @@
-require_relative "calculator/version"
-require_relative "calculator/parser"
-require_relative "calculator/router"
+require_relative 'calculator/version'
+require_relative 'calculator/parser'
+require_relative 'calculator/router'
 
 parserobject = Parser.new
 routerobject = Router.new
