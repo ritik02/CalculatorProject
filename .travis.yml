@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+ - 2.5.1
+ after_success:
+  - bundle install exec
+ script:
+  - bundle exec rspec
